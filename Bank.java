@@ -1,31 +1,36 @@
-package mypackage;
+package Newpackage;
 
 public class Bank {
- private long account_num;
- private String name,e_mail;
- private float amount;
-public long getAccount_name() {
-	return account_num;
+	int p = 500;
+	  int t = 1;
+      int a;
+      int r;
+	  void getRateOfIntrest() {
+	     r = (100 * a) / (p * t);
+	  }
 }
-public void setAccount_name(long account_name) {
-	this.account_num = account_name;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public String getE_mail() {
-	return e_mail;
-}
-public void setE_mail(String e_mail) {
-	this.e_mail = e_mail;
-}
-public float getAmount() {
-	return amount;
-}
-public void setAmount(float amount) {
-	this.amount = amount;
-}
-}
+  class Sbi extends Bank{
+		  int a = 40;
+
+		  void getRateOfIntrest() {
+		    int r = (100 * a) / (p * t);
+		    System.out.println(r);
+		  }
+	  }
+	class Icic extends Bank {
+		  int a = 35;
+
+		  void getRateOfIntrest() {
+		    int r = (100 * a) / (p * t);
+		    System.out.println(r);
+		  }
+		}
+	  class Boi extends Bank {
+		  int a = 45;
+
+		  void getRateOfIntrest() {
+		    int r = (100 * a) / (p * t);
+		    System.out.println(r);
+		  }
+		}
+
